@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Simple Markdown editor in the browser</title>
+</head>
+
+<body>
+    <main id="main">
+        <div class="editor-header">
+            <div>Please write your markdown file here</div>
+            <div>Preview here</div>
+        </div>
+
+        <div id="editor">
+            <textarea id="markdown-content"></textarea>
+            <div id="html-preview"></div>
+            <button id="editor-mode">Large Screen</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="./main.js"></script>
+</body>
+
+</html>
